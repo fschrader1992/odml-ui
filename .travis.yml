@@ -6,7 +6,7 @@ language: python
 matrix:
   allow_failures:
     - os: linux
-      python: "2.7"
+      python: "2.7_with_system_site_packages"
       sudo: required
       env: CONDA=N
     - os: linux
@@ -29,7 +29,6 @@ matrix:
       env: CONDA=N
     - os: linux
       python: "2.7"
-      dist: xenial
       sudo: required
       env: CONDA=Y CONDAPY=2.7
     - os: linux
